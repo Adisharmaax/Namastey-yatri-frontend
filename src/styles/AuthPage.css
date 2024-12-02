@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* AuthPage.css */
+.no-scroll-container {
+    overflow: hidden;
+}
+
+
+.auth-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 2%; /* Adds padding to avoid overflow */
+    gap: 1%;
+    margin: 1%; /* Extra margin for spacing */
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .auth-page {
+        flex-direction: row; /* Side-by-side layout on larger screens */
+    }
+}
+
+.auth-page__form,
+.auth-page__image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    max-width: 85%; /* Reduced max width */
+    max-height: 85vh; /* Prevents vertical overflow */
+}
+
+.auth-page__image img {
+    max-width: 70%; /* Reduced image size */
+    max-height: 90%; /* Ensures no overflow */
+    height: auto;
+    width: auto;
+}
+
+.auth-form {
+    width: 75%; /* Smaller form width */
+    max-width: 85%;
+    text-align: left;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.auth-form__logo {
+    margin-bottom: 1rem;
+}
+
+.auth-form__logo img {
+    width: 15%; /* Smaller logo size */
+    max-width: 60px;
+}
+
+.auth-form h2 {
+    font-size: 1.2rem; /* Reduced font size */
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.auth-form__row {
+    display: flex;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.auth-form__button {
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff8c00;
+    color: #060606;
+    font-size: 0.9rem; /* Slightly reduced font size */
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.auth-form__button:hover {
+    background-color: #e67300;
+}
+
+.auth-form__social-login {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.auth-form__social-login p {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.auth-form__social-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.3rem;
+}
+
+.auth-form__social-button {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ff8c00;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #ff8c00;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.3rem;
+}
+
+.auth-form__social-button img {
+    width: 16px;
+    height: auto;
+}
+
+.auth-form__terms {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    color: #6f6a6a;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.auth-form__terms label {
+    margin-left: 0.3rem;
+    color: #060606;
+}
+
+.auth-form__toggle {
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+    color: #070707;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-form__toggle span {
+    color: #ff8c00;
+    cursor: pointer;
+}
+
+.auth-form__divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.auth-form__divider::before,
+.auth-form__divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 0 5px;
+}
+/*trying to wrap */

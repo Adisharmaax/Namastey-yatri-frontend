@@ -1,0 +1,102 @@
+
+
+.payment-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    padding: 2%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .payment-page {
+        flex-direction: row; /* Side-by-side layout on larger screens */
+    }
+}
+
+.payment-page__image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 45%; /* Sets maximum width for better alignment */
+    padding: 1%;
+}
+
+.payment-page__image img {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.payment-page__form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 85%; /* Prevents form from taking excessive space */
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.payment-page__header {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.payment-page__logo {
+    width: 80px;
+    margin-bottom: 1rem;
+}
+
+.payment-page__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0.5rem 0;
+}
+
+.payment-page__checkbox {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.payment-page__button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #0a0a0a;
+    background-color: #ff8c00;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.payment-page__button:hover {
+    background-color: #e67300;
+}
+
+.payment-page__disclaimer {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.8rem;
+    text-align: center;
+    padding: 0 5%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #333;
+}
